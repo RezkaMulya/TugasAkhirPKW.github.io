@@ -1,0 +1,351 @@
+<html>
+	<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wisata Yogyakarta</title>
+    <link href="stylesheet.css" rel="stylesheet">
+    
+   
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+  
+<nav>
+
+	<ul>
+	 	<li><a href="#">Home</a></li>
+
+	 	<li><a href="#">Wisata Alam</a>
+		 	<ul>
+			 	<li><a href="pantai.html">Pantai</a></li>
+			 	<li><a href="gunung.html">Gunung</a></li>
+			 	<li><a href="sungai.html">Sungai</a></li>
+		 	</ul>
+ 		</li>
+ 		<li><a href="#">Wisata Non Alam</a>
+		 	<ul>
+			 	<li><a href="Mall.html">Mall</a></li>
+			 	<li><a href="Cafe.html">Cafe</a></li>
+                <li><a href="Zoo.html">Zoo</a></li>
+                <li><a href="waterpark.html">Water Park</a></li>
+                <li><a href="Playground.html">Playground</a></li>
+		 	</ul>
+		</li>
+ 		
+	</ul>
+</nav>
+
+<div class="jumbotron container mt-3 text-align">
+  <div class="mt-4 p-5  text-black rounded " >   
+      <style>
+          h1{
+              font-size: 80px;
+              font-style: italic ;
+              font-family: Brush Script MT;
+          }
+          p{
+              font-size: 28px;
+              font-family: Centaur;
+          }
+          
+      </style> 
+    <h1 >Wisata Jogja</h1> <br>
+    <p  >Selamat datang di website kami.<br>
+      Website ini menyediakan informasi wisata-wisata yang ada di Jogja.
+    </p> 
+  </div>
+
+</div>
+
+
+<style>
+  * {box-sizing: border-box;}
+  body {font-family: Verdana, sans-serif;}
+  .mySlides {display: none;}
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1500px;
+    /* max-height: 300px; */
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+  </style>
+  </head>
+  <body>
+  
+  <div class="slideshow-container">
+  
+  <div class="mySlides fade">
+    <img src="bg.awal.jpg" style="width:100%">
+    
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="bg.awal1.jpg" style="width:100%">
+    
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="bg.awal2.jpg" style="width:100%">
+    
+  </div>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  
+  <script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3500); 
+  }
+  </script>
+
+
+  <section class="konten">
+    <div class="container mt-5">
+     
+     <div class="row">
+      <div class="col-md-4">
+       <div class="thumbnail ">
+        <img src="pantai-wediombo.jpg" style="width:300px;height:200px">
+        <div class="caption font-family: book antigua">
+            <style>
+                h2{
+                    font-size: 30px;
+                    font-style: italic ;
+                    font-family: Georgia;
+                }
+                h6{
+                    font-size: 20px;
+                    font-family: book antigua;
+                }
+                
+            </style> 
+         <h2>Pantai Wediombo</h2>
+         <h6 >
+             Lokasi : Desa Jepitu, Kecamatan Girisubo, Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta 55883, Indonesia.<br>
+             Harga Tiket : Rp 10.000 <br><br>
+         <a href="https://www.google.com/maps/d/viewer?mid=1MG98OKePLKJo-ZE3m2opKnmX39Y&hl=en&ll=-8.185155000000014%2C110.70922900000002&z=17" 
+         class="btn btn-warning">Maps</a>
+        </div>
+       </div>
+      </div>
+
+      <div class="col-md-4">
+       <div class="thumbnail">
+        <img src="Watu Purbo.jpg" style="width:300px;height:200px">
+        <div class="caption">
+         <h2>Watu Purbo</h3>
+         <h6 >
+            Lokasi : Bangunrejo, Merdikorejo, Kec. Tempel, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55552<br>
+            Harga Tiket : Rp 5.000 <br><br>
+         <a href="https://www.google.com/maps/place/Grojogan+Watu+Purbo+Bangunrejo/@-7.6309566,110.3382947,17z/data=!3m1!4b1!4m5!3m4!1s0x2e7a61a211fa698d:0x1582552d652e1c6f!8m2!3d-7.6309566!4d110.3404834" 
+         class="btn btn-warning">Maps</a>
+        </div>
+       </div>
+      </div>
+
+      <div class="col-md-4">
+       <div class="thumbnail">
+        <img src="nglanggeran.jpg" style="width:300px;height:200px">
+        <div class="caption">
+         <h2>Gunung Purba</h3>
+         <h6 >
+            Lokasi : Nglanggeran Wetan, Nglanggeran, Kec. Patuk, Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta 55862<br>
+            Harga Tiket : Rp 15.000 <br><br>
+         <a href="https://www.google.com/maps/place/Puncak+Gunung+Api+Purba+-+Nglanggeran/@-7.841253,110.543056,15z/data=!4m5!3m4!1s0x0:0x7b1869f5bef5b000!8m2!3d-7.841253!4d110.543056" 
+         class="btn btn-warning">Maps</a>
+        </div>
+       </div>
+      </div>
+     <div class="row">
+      <div class="col-md-4">
+       <div class="thumbnail">
+        <img src="Pantai-Slili.jpg" style="width:300px;height:200px">
+        <div class="caption">
+         <h2>Pantai Slili</h3>
+         <h6 >
+            Lokasi : Nglanggeran Wetan, Nglanggeran, Kec. Patuk, Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta 55862<br>
+            Harga Tiket : Rp 10.000 <br><br>
+         <a href="https://www.google.com/maps/place/Puncak+Gunung+Api+Purba+-+Nglanggeran/@-7.841253,110.543056,15z/data=!4m5!3m4!1s0x0:0x7b1869f5bef5b000!8m2!3d-7.841253!4d110.543056" 
+         class="btn btn-warning">Maps</a>
+        </div>
+       </div>
+      </div>
+      
+        <div class="col-md-4">
+         <div class="thumbnail">
+          <img src="Mudal.jpg" style="width:300px;height:200px">
+          <div class="caption">
+           <h2>Sungai Mudal</h3>
+           <h6 >
+              Lokasi : Banyunganti, Jatimulyo, Kec. Girimulyo, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta 55674 <br>
+              Harga Tiket : Rp 10.000 <br><br>
+           <a href="https://www.google.com/maps/place/Ekowisata+Sungai+Mudal/@-7.7628136,110.1139739,17z/data=!3m1!4b1!4m5!3m4!1s0x2e7aee4a6fe974b7:0xc8f1e183fc8e2531!8m2!3d-7.7628136!4d110.1161626" 
+           class="btn btn-warning">Maps</a>
+          </div>
+         </div>
+        </div>
+   
+            <div class="col-md-4">
+             <div class="thumbnail">
+              <img src="pinus pengger.png" style="width:300px;height:200px">
+              <div class="caption">
+               <h2>Pinus Pengger</h3>
+               <h6 >
+                  Lokasi : Jl. Dlingo-Patuk, Sendangsari, Terong, Kec. Dlingo, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55783 <br>
+                  Harga Tiket : Rp 5.000 <br><br>
+               <a href="https://www.google.com/maps/place/Hutan+Pinus+Pengger/@-7.8704832,110.4577221,17z/data=!3m1!4b1!4m5!3m4!1s0x2e7a53d8d54f0903:0xf33314fb0104fc60!8m2!3d-7.8704832!4d110.4599108"
+               class="btn btn-warning">Maps</a>
+             </div>
+            </div>
+        </div>
+      
+            <div class="col-md-4">
+             <div class="thumbnail">
+              <img src="Pantai-Wohkudu.jpg" style="width:300px;height:200px">
+              <div class="caption">
+               <h2>Pantai Wohkudu</h3>
+               <h6 >
+                  Lokasi : Desa Girikarto, Kecamatan Panggang, Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta 55872, Indonesia <br>
+                  Harga Tiket : Rp 10.000 <br><br>
+               <a href="https://www.google.com/maps/place/Pantai+Wohudu/@-8.0987368,110.4383649,17z/data=!3m1!4b1!4m5!3m4!1s0x2e7baf39ac2c9dbf:0x1a6542b42171a1c5!8m2!3d-8.0987547!4d110.4405925"
+               class="btn btn-warning">Maps</a>
+             </div>
+            </div>
+        </div>
+      
+            <div class="col-md-4">
+             <div class="thumbnail">
+              <img src="Bluelagoon jogja.jpg" style="width:300px;height:200px">
+              <div class="caption">
+               <h2>Bluelagoon Jogja</h3>
+               <h6 >
+                  Lokasi : Area Sawah, Widodomartani, Ngemplak, Sleman, Daerah Istimewa Yogyakarta 55584. <br>
+                  Harga Tiket : Rp 2000 <br><br>
+               <a href="https://www.google.com/maps/place/Pantai+Wohudu/@-8.0987368,110.4405536,17z/data=!3m1!4b1!4m5!3m4!1s0x2e7baf39ac2c9dbf:0x1a6542b42171a1c5!8m2!3d-8.0987547!4d110.4405925"
+               class="btn btn-warning">Maps</a>
+             </div>
+            </div>
+        </div>
+    
+            <div class="col-md-4">
+             <div class="thumbnail">
+              <img src="Kali OYO.jpg" style="width:300px;height:200px">
+              <div class="caption">
+               <h2>Kali OYO</h3>
+               <h6 >
+                  Lokasi : Jelok, Beji, Kecamatan Patuk, Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta <br>
+                  Harga Tiket : Rp 15.000 <br><br>
+               <a href="https://www.google.com/maps?q=lokasi+kali+oyo&um=1&ie=UTF-8&sa=X&ved=2ahUKEwi-5ePOuKr4AhVwUGwGHcF7CC0Q_AUoAXoECAMQAw"
+               class="btn btn-warning">Maps</a>
+             </div>
+            </div>
+        </div>
+   </section>
+
+
+
+  <footer class="bg-dark text-light">
+    <div class="container ">
+        <div class="row">
+            <div class="col-6">
+                <div class="text-center py-3 ">
+                <h3>Contact </h3>
+                <h5>Telepon : 0274-12345678</h5>
+                <h5>Instagram : jogja.wisata</h5>
+                <h5>Facebook : wisatajogja</h5>
+            </div>
+        </div>
+    <div class="col-6">
+        <div class="text-center py-3 ">
+            <h3>Kelas C</h3>
+            <h5>Pengembangan Konten Web</h5>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="text-center py-3 font-family: Courier">
+            <p>Copyright &copy; 2022</p>
+        </div>
+    </div>
+    </div>
+    </div>
+  </footer>
+ 
+  <script src="JavaScript.js"></script>
+</body>
+</html>
